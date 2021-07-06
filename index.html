@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie-list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Movie List</h1>
+    </header>
+    <main>
+        <fieldset >
+            <legend>New movie</legend>
+        <form id="movieForm">
+            <label for="name">Name<input type="text" id="name" name="name" required></label>
+            <label for="image">Image<select name="image" id="image" required>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="animation">Animation</option>
+                <option value="comedy">Comedy</option>
+                <option value="detective">Detective</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="history">History</option>
+                <option value="horror">Horror</option>
+                <option value="musical">Musical</option>
+                <option value="pirate">Pirate</option>
+                <option value="romantic">Romantic</option>
+                <option value="sci-fi">SCI-FI</option>
+                <option value="war">War</option>
+                <option value="western">Western</option>
+            </select></label>
+            <label for="release">Release<input type="number" id="release" name="release" required></label>
+            <span>
+            <button type="submit"  id="save">Save</button>
+            <button  type="button" id="clear">Clear LS</button>
+        </span>
+        </form>
+    </fieldset>
+        <section id="list">
+            <!-- <table>
+                <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Release</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                    <th>Quantity</th>
+                    <th id="quantity">0</th>
+                </tr>
+                </tfoot>
+            </table> -->
+        </section>
+    </main>
+    <footer>
+       <p>ALL right reserved 2021 &copy; ASAC</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
